@@ -1,7 +1,9 @@
 import './style.css';
 import './fonts.css';
+
 import { templateWelcomeHtml } from './templates/welcome';
 import { templateAboutHtml } from './templates/about';
+import { templateMenuHtml } from './templates/menu';
 
 
 
@@ -21,9 +23,18 @@ function renderWelcomeHtml () {
     });
 }
 
+function renderMenuHtml () {
+    let button = document.getElementById('menu');
+    button.addEventListener('click', () => {
+        document.getElementById('content').innerHTML = '';
+        document.getElementById('content').innerHTML += templateMenuHtml();
+    });
+}
+
 function main () {
     renderWelcomeHtml();
     renderAboutHtml();
+    renderMenuHtml();
 }
 
 document.getElementById('content').innerHTML += templateWelcomeHtml();

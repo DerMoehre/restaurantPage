@@ -80,3 +80,25 @@ body {
     width: 48px;
     filter: invert(95%) sepia(13%) saturate(516%) hue-rotate(321deg) brightness(99%) contrast(98%);
 }
+
+.recipe_container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    color: antiquewhite;
+}
+
+.menu_item {
+    height: 150px;
+    width: 150px;
+}
+
+.recipe {
+    display: flex;
+    align-items: flex-end;
+}
+
+ul {
+    
+    font-size: 24px;
+}
