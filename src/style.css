@@ -9,11 +9,22 @@ header {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
 button {
     height: 50px;
     width: 150px;
     font-size: 24px;
     background-color: antiquewhite;
+    clip-path: polygon(14% 0, 86% 0, 100% 30%, 100% 70%, 86% 100%, 14% 100%, 0% 70%, 0% 30%);
 }
 
 body {
