@@ -1,8 +1,30 @@
 import './style.css';
+import './fonts.css';
 import { templateWelcomeHtml } from './templates/welcome';
+import { templateAboutHtml } from './templates/about';
 
-function renderWelcomeHtml () {
-    document.getElementById('content').innerHTML += templateWelcomeHtml()
+
+
+function renderAboutHtml () {
+    let button = document.getElementById('about');
+    button.addEventListener('click', () => {
+        document.getElementById('content').innerHTML = '';
+        document.getElementById('content').innerHTML += templateAboutHtml();
+    });
 }
 
-renderWelcomeHtml();
+function renderWelcomeHtml () {
+    let button = document.getElementById('home');
+    button.addEventListener('click', () => {
+        document.getElementById('content').innerHTML = '';
+        document.getElementById('content').innerHTML += templateWelcomeHtml();
+    });
+}
+
+function main () {
+    renderWelcomeHtml();
+    renderAboutHtml();
+}
+
+document.getElementById('content').innerHTML += templateWelcomeHtml();
+main();

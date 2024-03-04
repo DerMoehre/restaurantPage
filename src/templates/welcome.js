@@ -1,5 +1,4 @@
 
-
 function templateWelcomeHtml () {
     return `
         <div class="main_content">

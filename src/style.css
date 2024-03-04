@@ -20,6 +20,7 @@ nav {
 }
 
 button {
+    cursor: pointer;
     height: 50px;
     width: 150px;
     font-size: 24px;
@@ -28,6 +29,7 @@ button {
 }
 
 body {
+    font-family: 'Raleway';
     background-color: #101010;
     margin: 0;
     min-height: 100vh;
@@ -39,9 +41,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .main_content {
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,3 +68,15 @@ body {
     justify-content: end;
 }
 
+.contact_information {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+}
+
+.contact_img {
+    height: 48px;
+    width: 48px;
+    filter: invert(95%) sepia(13%) saturate(516%) hue-rotate(321deg) brightness(99%) contrast(98%);
+}
