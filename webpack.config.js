@@ -7,13 +7,6 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  plugins: [
-    new CopyPlugin({
-        patterns: [
-            { from: "src/assets", to: "assets" } //to the dist root directory
-        ],
-    }),
-    ],
   module: {
     rules: [
       {
@@ -30,4 +23,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CopyPlugin({
+        patterns: [
+            { from: path.resolve(__dirname, './src/assets/'),
+              to: path.resolve(__dirname, 'dist') } //to the dist root directory
+        ],
+    }),
+    ]
 };

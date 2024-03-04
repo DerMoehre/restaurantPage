@@ -3,7 +3,7 @@ function templateMenuHtml () {
     return `
         <div class="recipe_container">
             <div class="recipe">
-                <img class="menu_item" src="../src/assets/food/bowl_hot food_hotsoup_icon.svg" alt="soup">
+                <img class="menu_item" src="./assets/food/bowl_hot food_hotsoup_icon.svg" alt="soup">
                 <ul>
                     <li>Tomato Soup</li>
                     <li>Onion Soup</li>
@@ -11,7 +11,7 @@ function templateMenuHtml () {
                 </ul>
             </div>
             <div class="recipe">
-                <img class="menu_item" src="../src/assets/food/burger_cheeseburger_food_junk food_icon.svg" alt="burger">
+                <img class="menu_item" src="./assets/food/burger_cheeseburger_food_junk food_icon.svg" alt="burger">
                 <ul>
                     <li>Hamburger</li>
                     <li>Cheese Burger</li>
@@ -19,7 +19,7 @@ function templateMenuHtml () {
                 </ul>
             </div>
             <div class="recipe">
-                <img class="menu_item" src="../src/assets/food/chili_food_hot_dog_picnic_weiner_icon.svg" alt="hot-dog">
+                <img class="menu_item" src="./assets/food/chili_food_hot_dog_picnic_weiner_icon.svg" alt="hot-dog">
                 <ul>
                     <li>NY-Style Hot Dog</li>
                     <li>Double Hot Dog</li>
