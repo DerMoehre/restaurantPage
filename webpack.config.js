@@ -6,6 +6,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]'
   },
   module: {
     rules: [
@@ -16,19 +17,14 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'static/[hash][ext][query]'
+        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
     ],
-  },
-  plugins: [
-    new CopyPlugin({
-        patterns: [
-            { from: path.resolve(__dirname, './src/assets/'),
-              to: path.resolve(__dirname, 'dist') } //to the dist root directory
-        ],
-    }),
-    ]
+  }
 };
