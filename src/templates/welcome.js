@@ -2,7 +2,7 @@
 function templateWelcomeHtml () {
     return `
         <div class="main_content">
-            <img class="img_large" src="../src/assets/pablo-merchan-montes-hyIE90CN6b0-unsplash.jpg" alt="burger">
+            <img class="img_large" src="./assets/pablo-merchan-montes-hyIE90CN6b0-unsplash.jpg" alt="burger">
             <div class="welcome_text">
                 <h1>Welcome to my Restaurant</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum numquam,
