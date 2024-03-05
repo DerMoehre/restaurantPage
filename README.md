@@ -35,7 +35,3 @@ The restaurant page project consists of the following key features:
     <img src="menu.png">
     <img src="about.png">
 </div>
-
-![alt text](image-1.png)
-
-![alt text](image-2.png)
